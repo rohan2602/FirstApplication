@@ -1,0 +1,97 @@
+{
+    "server": {
+        "port": 5555
+    },
+    "app": {
+        "prefix": "/pnc/auction/vendor/api",
+        "secret": "longlivenodejsafterallitsjavascript3cheershiphiphurray"
+    },
+    "db": {
+        "mongodb_url": "mongodb://pncuser:PnCu%24er12@10.26.24.45:27017/pnc-auction?authSource=pncrfx",
+        "mongodb_session_store_url": "mongodb://pncuser:PnCu%24er12@10.26.24.45:27017/pncsessions?authSource=pncrfx"
+    },
+    "auth": {
+        "token_validity": 3600,
+        "cookie_validity": 3600
+    },
+    "cookie": {
+        "path": "/",
+        "name": "ril_xsprs_sid",
+        "validity": 3600
+    },
+    "elasticapmnode": {
+        "serviceName": "dt_fcatar_dev-api",
+        "serviceVersion": "1.0",
+        "serverUrl": "http://10.26.24.32:8200",
+        "active": true,
+        "instrument": true,
+        "asyncHooks": true,
+        "secretToken": "",
+        "captureBody": "all",
+        "errorOnAbortedRequests": false,
+        "abortedErrorThreshold": 25000,
+        "transactionSampleRate": 1.0,
+        "hostname": "10.26.24.32",
+        "frameworkName": "elastic-apm-node",
+        "frameworkVersion": "6.5.1",
+        "logLevel": "info",
+        "captureExceptions": true,
+        "captureErrorLogStackTraces": "messages",
+        "captureSpanStackTraces": true,
+        "errorMessageMaxLength": 2048,
+        "stackTraceLimit": 50,
+        "transactionMaxSpans": 500,
+        "flushInterval": 10,
+        "serverTimeout": 30,
+        "maxQueueSize": 100,
+        "filterHttpHeaders": true
+    },
+    "token": {
+        "validity": 86400,
+        "refreshValidity": 604800,
+        "secret": "longlivenodejsafterallitsjavascript3cheershiphiphurray"
+    },
+    "cors": {
+        "whitelist": [
+            "http://10.26.32.135:5999",
+            "http://10.26.32.135:5452",
+            "http://10.26.32.135:5451",
+            "http://localhost:3000",
+            "http://10.26.32.135:5454",
+            "http://rauctiondev.ril.com",
+            "http://rauctiondev.ril.com/",
+            "http://10.129.4.223:80",
+            "http://localhost:4202",
+            "http://localhost:4203",
+            "http://localhost:4208",
+            "http://localhost:4209"
+        ]
+    },
+    "origin": {
+        "url": "http://rauctiondev.ril.com"
+    },
+    "external_endpoints": {
+        "verify_token": "http://rauctiondev.ril.com/pnc/security/api/v1/token/verify",
+        "pnc_auction": "http://rauctiondev.ril.com/pnc/auction/api/v1"
+    },
+    "utils_url": {
+        "common_currency": "http://rauctiondev.ril.com/pnc/core/api/v1/currency",
+        "security_login": "http://rauctiondev.ril.com/security/login",
+        "auction_scheduler": "http://ra-nj-pncauctionscheduler.rauction.svc.cluster.local:5000/pnc/auction/schedule/api/v1/auction/schedule",
+        "userRegistration": "http://cu-nj-pncsecurity.commonutilities.svc.cluster.local:5000/pnc/security/api"
+    },
+    "email_sms_notifications": {
+        "APP_ID": "5cf8b396e6f83a0013ad1a65",
+        "SMS_URL": "http://rauctiondev.ril.com/commons/api/v1/sms",
+        "MAIL_URL": "http://rauctiondev.ril.com/commons/api/v1/email"
+    },
+    "redis": {
+        "host": "10.26.24.44",
+        "port": "6379",
+        "password": "Reliance#123"
+    },
+    "socketPath": "/pnc/auction/bid/",
+    "excel": {
+        "password": "ril@1234"
+    }
+}
